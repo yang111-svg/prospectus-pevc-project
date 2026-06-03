@@ -17,7 +17,7 @@ parse_results = [
 ]
 
 rows = []
-with open(COMPANY_LIST, "r", encoding="utf-8") as f:
+with open(COMPANY_LIST, "r", encoding="utf-8-sig") as f:
     reader = csv.DictReader(f)
     fieldnames = reader.fieldnames
     for row in reader:
@@ -26,7 +26,7 @@ with open(COMPANY_LIST, "r", encoding="utf-8") as f:
                 row["parse_status"] = r["status"]
         rows.append(row)
 
-with open(COMPANY_LIST, "w", encoding="utf-8", newline="") as f:
+with open(COMPANY_LIST, "w", encoding="utf-8-sig", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(rows)
@@ -34,11 +34,10 @@ with open(COMPANY_LIST, "w", encoding="utf-8", newline="") as f:
 print("企业清单已更新")
 
 log_exists = LOG_FILE.exists()
-with open(LOG_FILE, "a", encoding="utf-8", newline="") as f:
+with open(LOG_FILE, "a", encoding="utf-8-sig", newline="") as f:
     writer = csv.writer(f)
     if not log_exists:
-        writer.writerow(["company_name", "stock_code", "file_name", "parser", "parse_time", "page_count", "markdown_path", "status", "error_message"])
-    
+        writer.writerow(["company_name", "stock_code", "file_name", "parser", "parse_time", "page_count", "markdown_path", "status", "error_message"])  
     for r in parse_results:
         writer.writerow([
             r["name"],
