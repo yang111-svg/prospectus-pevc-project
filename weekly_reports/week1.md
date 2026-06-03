@@ -83,31 +83,51 @@ python validate.py
 - **字段是否完整**: 基本完整，包含公司信息、融资事件、处理状态
 - **是否有证据文本**: 是，每个融资事件包含evidence_text字段
 
-### 示例JSON结构
+### 示例JSON结构（完整字段示范 - 赛分科技）
 ```json
 {
   "company": {
-    "company_name": "芜湖三联锻造股份有限公司",
-    "stock_code": "001282",
-    "exchange": "SZSE",
-    "board": "主板",
-    "listing_date": "2023-05-24",
-    "prospectus_title": "首次公开发行股票并在主板上市招股说明书",
-    "prospectus_url": "https://static.cninfo.com.cn/finalpage/2023-05-17/1216830304.PDF",
+    "company_name": "苏州赛分科技股份有限公司",
+    "stock_code": "688758",
+    "exchange": "SSE",
+    "board": "科创板",
+    "listing_date": "2025-01-15",
+    "prospectus_title": "赛分科技首次公开发行股票并在科创板上市招股说明书",
+    "prospectus_url": "https://static.cninfo.com.cn/finalpage/2025-01-06/1222238930.PDF",
     "prospectus_version": "正式稿",
-    "prospectus_date": "2023-05-17"
+    "prospectus_date": "2025-01-06"
   },
   "financing_events": [
     {
+      "event_order": 1,
+      "event_date": "2015-07",
+      "date_type": "协议签署日",
       "event_type": "增资",
-      "date": "",
-      "amount": "",
-      "investor": "",
-      "valuation_pre": "",
-      "valuation_post": "",
-      "share_percentage": "",
-      "lock_up_period": "",
-      "evidence_text": "..."
+      "disclosed_round": "未披露",
+      "inferred_round": "",
+      "round_inference_basis": "",
+      "total_investment_amount": null,
+      "currency": "CNY",
+      "share_price": null,
+      "pre_money_valuation": null,
+      "post_money_valuation": null,
+      "valuation_basis": "",
+      "investors": [
+        {
+          "investor_original_name": "高新同华",
+          "investor_short_name": "高新同华",
+          "investor_type": "PE",
+          "is_pevc": "yes",
+          "investment_amount": null,
+          "shares_acquired": null,
+          "shareholding_ratio_after_event": null,
+          "exit_status_before_ipo": "未退出"
+        }
+      ],
+      "source_section": "第五节 发行人基本情况 - 三、发行人股本演变情况",
+      "source_page": "",
+      "evidence_text": "2015年7月签署《投资合作框架协议》...",
+      "confidence": "medium"
     }
   ],
   "processing": {
@@ -115,11 +135,16 @@ python validate.py
     "parse_status": "success",
     "locate_status": "success",
     "extract_status": "success",
-    "review_status": "待复核",
-    "notes": "含创业投资基金股东与增资股本变化信息"
+    "review_status": "unchecked",
+    "notes": "示范样例：按任务书建议的完整JSON结构手动补充"
   }
 }
 ```
+
+**完整JSON文件**: `outputs/week1_sample_json/688758_苏州赛分科技_pevc_info.json`
+- 包含8个融资事件、20个投资方
+- 识别出A+轮、B轮、C轮融资轮次
+- 未披露的信息标注为null，未编造数据
 
 ## 6. 失败案例
 

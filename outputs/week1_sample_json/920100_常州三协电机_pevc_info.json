@@ -171,7 +171,7 @@
     "parse_status": "success",
     "locate_status": "success",
     "extract_status": "success",
-    "review_status": "待复核",
+    "review_status": "unchecked",
     "notes": "含私募基金股东、创业投资企业和发行前股东结构识别"
   }
 }

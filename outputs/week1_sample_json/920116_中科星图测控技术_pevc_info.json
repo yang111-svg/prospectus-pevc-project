@@ -61,7 +61,7 @@
     "parse_status": "success",
     "locate_status": "success",
     "extract_status": "success",
-    "review_status": "待复核",
+    "review_status": "unchecked",
     "notes": "含新增股东增资金额与创业投资股东信息"
   }
 }

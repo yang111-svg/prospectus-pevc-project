@@ -160,7 +160,7 @@
     "parse_status": "success",
     "locate_status": "success",
     "extract_status": "success",
-    "review_status": "待复核",
+    "review_status": "unchecked",
     "notes": "含创业投资基金股东与增资股本变化信息"
   }
 }

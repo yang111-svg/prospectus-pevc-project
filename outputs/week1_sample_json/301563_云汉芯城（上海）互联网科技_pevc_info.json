@@ -138,7 +138,7 @@
     "parse_status": "success",
     "locate_status": "success",
     "extract_status": "success",
-    "review_status": "待复核",
+    "review_status": "unchecked",
     "notes": ""
   }
 }
