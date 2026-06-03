@@ -1,0 +1,122 @@
+{
+  "company": {
+    "company_name": "黄山谷捷股份有限公司",
+    "stock_code": "301581",
+    "exchange": "SZSE",
+    "board": "创业板",
+    "listing_date": "2024-12-26",
+    "prospectus_title": "黄山谷捷首次公开发行股票并在创业板上市招股说明书",
+    "prospectus_url": "https://static.cninfo.com.cn/finalpage/2024-12-19/1222066314.PDF",
+    "prospectus_version": "正式稿",
+    "prospectus_date": "2024-12-19"
+  },
+  "financing_events": [
+    {
+      "event_type": "股权转让",
+      "date": "2021年4月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "第一次股权转让 (股权转让)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年11月",
+      "amount": "1,714.2857",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "第一次增资，增资至 1,714.2857 万元 (增资)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2022年5月",
+      "amount": "1,804.5113",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "第二次增资，增资至 1,804.5113 万元 (增资)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年9月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "19 日，谷捷有限召开股东会，同意上述增资扩股事项。"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年11月",
+      "amount": "",
+      "investor": "注册资本",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "月的增资价格 22.42 元/注册资本；本"
+    },
+    {
+      "event_type": "增资",
+      "date": "2022年",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "度 增资控股"
+    },
+    {
+      "event_type": "增资",
+      "date": "2023年",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "度外协加工费占比下降，主要系公司增资控股黄山广捷，降低了电镀外"
+    },
+    {
+      "event_type": "增资",
+      "date": "2022年5月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "公司通过增资的方式取"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年12月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "22 日，公司临时股东会审议通过对公司 2021 年增资扩股前的"
+    }
+  ],
+  "processing": {
+    "download_status": "success",
+    "parse_status": "success",
+    "locate_status": "success",
+    "extract_status": "success",
+    "review_status": "待复核",
+    "notes": ""
+  }
+}

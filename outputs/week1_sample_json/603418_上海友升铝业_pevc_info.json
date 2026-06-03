@@ -1,0 +1,144 @@
+{
+  "company": {
+    "company_name": "上海友升铝业股份有限公司",
+    "stock_code": "603418",
+    "exchange": "SSE",
+    "board": "主板",
+    "listing_date": "2025-09-25",
+    "prospectus_title": "友升股份首次公开发行股票并在主板上市招股说明书",
+    "prospectus_url": "https://static.cninfo.com.cn/finalpage/2025-09-18/1224667002.PDF",
+    "prospectus_version": "正式稿",
+    "prospectus_date": "2025-09-18"
+  },
+  "financing_events": [
+    {
+      "event_type": "增资",
+      "date": "2020年9月",
+      "amount": "13,380.00",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "增资至 13,380.00 万元 (增资)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2022年12月",
+      "amount": "14,480.1333",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "增资至 14,480.1333 万元 (增资)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2020年9月",
+      "amount": "",
+      "investor": "金浦临港基金",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "金浦临港基金、金浦科创基金和上海骁墨与本次增资前公司"
+    },
+    {
+      "event_type": "增资",
+      "date": "2020年9月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "30 日，友升股份完成了上述增资的工商变更登记手续，并取得"
+    },
+    {
+      "event_type": "增资",
+      "date": "2022年12月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "19 日，友升股份完成了上述增资的工商变更登记手续，并取"
+    },
+    {
+      "event_type": "增资",
+      "date": "2018年12月",
+      "amount": "200",
+      "investor": "共青城泽升合伙人认缴出资额由",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "共青城泽升合伙人认缴出资额由 200 万元变更为 930.7737"
+    },
+    {
+      "event_type": "增资",
+      "date": "2018年4月",
+      "amount": "",
+      "investor": "外部投资者达晨创联基金增资友升有限的价格",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "外部投资者达晨创联基金增资友升有限的价格 7.0908 元/单位注册资"
+    },
+    {
+      "event_type": "其他",
+      "date": "2021年2月",
+      "amount": "40",
+      "investor": "共青城泽升执行事务合伙人金丽燕将",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "共青城泽升执行事务合伙人金丽燕将 40 万元出资额转让给 9"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2003年7月",
+      "amount": "",
+      "investor": "陈桂荣与第一美亚基金签署了",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "3 日，陈桂荣与第一美亚基金签署了《股权转让协议》，约定第"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2003年7月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "30 日，第一美亚与美国日升签署《股权转让协议》，约定第一"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2007年8月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "占庆华已将其持有美国日升 100%股权转让予罗世兵，解除"
+    }
+  ],
+  "processing": {
+    "download_status": "success",
+    "parse_status": "success",
+    "locate_status": "success",
+    "extract_status": "success",
+    "review_status": "待复核",
+    "notes": ""
+  }
+}

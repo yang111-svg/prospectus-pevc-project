@@ -1,0 +1,166 @@
+{
+  "company": {
+    "company_name": "芜湖三联锻造股份有限公司",
+    "stock_code": "001282",
+    "exchange": "SZSE",
+    "board": "主板",
+    "listing_date": "2023-05-24",
+    "prospectus_title": "首次公开发行股票并在主板上市招股说明书",
+    "prospectus_url": "https://static.cninfo.com.cn/finalpage/2023-05-17/1216830304.PDF",
+    "prospectus_version": "正式稿",
+    "prospectus_date": "2023-05-17"
+  },
+  "financing_events": [
+    {
+      "event_type": "增资",
+      "date": "2019年12月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "股份有限公司第一次增资"
+    },
+    {
+      "event_type": "增资",
+      "date": "1995年12月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "变更名称及第一次增资"
+    },
+    {
+      "event_type": "增资",
+      "date": "2002年10月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "第一次股权转让、第二次增资及变更名称"
+    },
+    {
+      "event_type": "增资",
+      "date": "2005年5月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "第三次增资、第二次股权转让"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2014年2月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "第三次股权转让"
+    },
+    {
+      "event_type": "其他",
+      "date": "2014年2月",
+      "amount": "276.15",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "股东孙国奉将其持有温州三联 276.15 万元出资额无偿转让予"
+    },
+    {
+      "event_type": "其他",
+      "date": "2017年8月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "31 日，温州三联用以出资的委评资产（房屋和土地使用权）的"
+    },
+    {
+      "event_type": "增资",
+      "date": "2017年11月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "温州三联子公司三连零部件第一次增资"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2019年",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "初）进行了四次股权转让和四次增"
+    },
+    {
+      "event_type": "其他",
+      "date": "1994年3月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "股东孙国奉、孙国敏、张松满出资设立瑞安市国环螺钉厂，"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2016年1月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "第一次股权转让"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2020年1月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "第二次股权转让"
+    },
+    {
+      "event_type": "其他",
+      "date": "1999年",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "）中第二十四条的规定，存在出资程序瑕疵。股东以现"
+    }
+  ],
+  "processing": {
+    "download_status": "success",
+    "parse_status": "success",
+    "locate_status": "success",
+    "extract_status": "success",
+    "review_status": "待复核",
+    "notes": "含创业投资基金股东与增资股本变化信息"
+  }
+}

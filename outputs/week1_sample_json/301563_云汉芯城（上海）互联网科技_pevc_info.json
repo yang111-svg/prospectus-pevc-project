@@ -1,0 +1,144 @@
+{
+  "company": {
+    "company_name": "云汉芯城（上海）互联网科技股份有限公司",
+    "stock_code": "301563",
+    "exchange": "SZSE",
+    "board": "创业板",
+    "listing_date": "2025-10-08",
+    "prospectus_title": "云汉芯城首次公开发行股票并在创业板上市招股说明书",
+    "prospectus_url": "https://static.cninfo.com.cn/finalpage/2025-09-25/1224679402.PDF",
+    "prospectus_version": "正式稿",
+    "prospectus_date": "2025-09-25"
+  },
+  "financing_events": [
+    {
+      "event_type": "股权转让",
+      "date": "2018年4月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "股份公司第一次股权转让 (股权转让)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2018年6月",
+      "amount": "",
+      "investor": "股份公司增加注册资本暨第二次股权转让",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "至 7 月，股份公司增加注册资本暨第二次股权转让 (股权转让)"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2019年8月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "股份公司第三次股权转让 (股权转让)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2020年5月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "股份公司第二次增资 (增资)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2020年9月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "股份公司第三次增资和第四次股权转让 (增资)"
+    },
+    {
+      "event_type": "其他",
+      "date": "2008年5月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "4 日的出资情况进行了审验，并出具了沪德欣（2008）"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2022年6月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "已将股权转让给第三方。"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2022年7月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "已将股权转让给"
+    },
+    {
+      "event_type": "增资",
+      "date": "",
+      "amount": "3,000",
+      "investor": "元认缴新增注册资本",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "元认缴新增注册资本 7.004 万元；南山富海以现金 3,000 万元"
+    },
+    {
+      "event_type": "增资",
+      "date": "2018年6月",
+      "amount": "20",
+      "investor": "新增注册资本",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "新增注册资本 20 万元；秦国君以现金 20 万元"
+    },
+    {
+      "event_type": "增资",
+      "date": "2018年6月",
+      "amount": "60",
+      "investor": "峰以现金 20 万元认缴新增注册资本",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "峰以现金 20 万元认缴新增注册资本 20 万元；周雪峰以现金 60 万元"
+    }
+  ],
+  "processing": {
+    "download_status": "success",
+    "parse_status": "success",
+    "locate_status": "success",
+    "extract_status": "success",
+    "review_status": "待复核",
+    "notes": ""
+  }
+}

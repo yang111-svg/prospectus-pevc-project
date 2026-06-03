@@ -1,0 +1,122 @@
+{
+  "company": {
+    "company_name": "影石创新科技股份有限公司",
+    "stock_code": "688775",
+    "exchange": "SSE",
+    "board": "科创板",
+    "listing_date": "2025-06-18",
+    "prospectus_title": "影石创新首次公开发行股票并在科创板上市招股说明书",
+    "prospectus_url": "https://static.cninfo.com.cn/finalpage/2025-06-06/1223788474.PDF",
+    "prospectus_version": "正式稿",
+    "prospectus_date": "2025-06-06"
+  },
+  "financing_events": [
+    {
+      "event_type": "股权转让",
+      "date": "2023年3月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "股份公司第一次股权转让 (股权转让)"
+    },
+    {
+      "event_type": "其他",
+      "date": "2014年1月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "27 日，刘靖康、陈永强、谢梦非以货币出资方式设立南京五十"
+    },
+    {
+      "event_type": "其他",
+      "date": "2014年7月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "17 日，刘靖康、陈永强、谢梦非以货币出资方式设立北京岚锋，"
+    },
+    {
+      "event_type": "其他",
+      "date": "2014年8月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "8 日，开曼岚锋在香港出资设立香港岚锋。香港岚锋的法定股"
+    },
+    {
+      "event_type": "增资",
+      "date": "2023年6月",
+      "amount": "120.00",
+      "investor": "珠海睿泽创业投资基金（有限合伙）向知盛投资增资",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "9 日，珠海睿泽创业投资基金（有限合伙）向知盛投资增资 120.00 万元，"
+    },
+    {
+      "event_type": "增资",
+      "date": "2024年8月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "与融光光学及其股东签订增资协议，通过增资方式取得融光光学 20%"
+    },
+    {
+      "event_type": "增资",
+      "date": "2024年9月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "29 日，公司通过增资方式入股融光光学。截至 2024 年 12 月 31"
+    },
+    {
+      "event_type": "其他",
+      "date": "2015年7月",
+      "amount": "",
+      "investor": "公司注册资本",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "9 日，北京岚锋以货币出资方式设立深圳岚锋，公司注册资本"
+    },
+    {
+      "event_type": "其他",
+      "date": "2020年6月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "30日至本招股说明书签署日，刘靖康对岚沣管理的出资比例由 88.3504%"
+    }
+  ],
+  "processing": {
+    "download_status": "success",
+    "parse_status": "success",
+    "locate_status": "success",
+    "extract_status": "success",
+    "review_status": "待复核",
+    "notes": "适合练习多轮融资和股权演变字段"
+  }
+}

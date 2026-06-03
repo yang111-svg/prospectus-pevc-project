@@ -1,0 +1,177 @@
+{
+  "company": {
+    "company_name": "苏州赛分科技股份有限公司",
+    "stock_code": "688758",
+    "exchange": "SSE",
+    "board": "科创板",
+    "listing_date": "2025-01-15",
+    "prospectus_title": "赛分科技首次公开发行股票并在科创板上市招股说明书",
+    "prospectus_url": "https://static.cninfo.com.cn/finalpage/2025-01-06/1222238930.PDF",
+    "prospectus_version": "正式稿",
+    "prospectus_date": "2025-01-06"
+  },
+  "financing_events": [
+    {
+      "event_type": "增资",
+      "date": "2021年4月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "报告期内第一次股权转让及第一次增资 (增资)"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2021年8月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "报告期内第二次股权转让 (股权转让)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年11月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "报告期内第二次增资 (增资)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年12月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "报告期内第三次增资 (增资)"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2021年1月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "黄学英与朱勤华签署了《股权转让协议》，2021 年 2 月 24 日，"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2021年3月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "上述股权受让方将股权转让款项支付给黄学英。根据国家税"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年7月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "10 日，赛分有限、高新同华与黄学英签署《增资协议之补充协"
+    },
+    {
+      "event_type": "增资",
+      "date": "2015年8月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "签署的《增资协议》中第五条“业绩承诺和补偿”，"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年10月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "28 日，上述新增股东与赛分科技签署了《增资协议》。截至"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年11月",
+      "amount": "",
+      "investor": "聚贝投资与赛分科技及原股东签署了",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "22 日，聚贝投资与赛分科技及原股东签署了《增资协议》。"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年12月",
+      "amount": "",
+      "investor": "聚贝投资支付完毕全部增资款",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "聚贝投资支付完毕全部增资款。"
+    },
+    {
+      "event_type": "其他",
+      "date": "2017年",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "被激励人员以 6.15 元/股的价格认购苏州杰贤、苏州贤达股份。2018"
+    },
+    {
+      "event_type": "增资",
+      "date": "2018年7月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "，以增资方式进行 B 轮融资，价格"
+    },
+    {
+      "event_type": "其他",
+      "date": "2018年4月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "公司进行 A+轮融资，实际控制人黄学英以老股转让引入华泰大健康一"
+    }
+  ],
+  "processing": {
+    "download_status": "success",
+    "parse_status": "success",
+    "locate_status": "success",
+    "extract_status": "success",
+    "review_status": "待复核",
+    "notes": "适合练习VC/PE投资识别与证据保留"
+  }
+}

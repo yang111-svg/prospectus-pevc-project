@@ -1,0 +1,177 @@
+{
+  "company": {
+    "company_name": "常州三协电机股份有限公司",
+    "stock_code": "920100",
+    "exchange": "BSE",
+    "board": "北交所",
+    "listing_date": "2025-07-22",
+    "prospectus_title": "常州三协电机股份有限公司招股说明书（申报稿）",
+    "prospectus_url": "https://www.bse.cn/disclosure/2025/2025-07-11/1752226211_504693.pdf",
+    "prospectus_version": "申报稿",
+    "prospectus_date": "2025-07-11"
+  },
+  "financing_events": [
+    {
+      "event_type": "增资",
+      "date": "2023年4月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "深圳三协增资，三合融创持股比例变 (增资)"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年5月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "深圳三协第一次增资"
+    },
+    {
+      "event_type": "增资",
+      "date": "2021年5月",
+      "amount": "100",
+      "investor": "同意增加注册资本",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "10 日，深圳三协召开股东会，作出决议，同意增加注册资本 100 万元，即由原来"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2022年10月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "深圳三协第四次股权转让"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2022年11月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "深圳三协第五次股权转让"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2023年8月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "深圳三协第六次股权转让"
+    },
+    {
+      "event_type": "增资",
+      "date": "2022年10月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "发行人全资子公司三合融创首次持有深圳三协 32.50%股权；2023 年 3 月，深圳三协增资，三"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2019年7月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "深圳三协第一次股权转让"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2020年1月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "深圳三协第二次股权转让"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2019年12月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "6 日，卢娇娇分别与朱南保、陈广武就相应股权转让事宜签订《股权转让协议书》；"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2021年5月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "深圳三协第三次股权转让"
+    },
+    {
+      "event_type": "其他",
+      "date": "2022年8月",
+      "amount": "2,374.40",
+      "investor": "长泽创投缴纳的出资款",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "9 日，公司已收到稳正景明、长泽创投缴纳的出资款 2,374.40 万元。"
+    },
+    {
+      "event_type": "减资",
+      "date": "2024年6月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "深圳三协第一次减资"
+    },
+    {
+      "event_type": "减资",
+      "date": "2025年7月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "深圳三协第二次减资"
+    }
+  ],
+  "processing": {
+    "download_status": "success",
+    "parse_status": "success",
+    "locate_status": "success",
+    "extract_status": "success",
+    "review_status": "待复核",
+    "notes": "含私募基金股东、创业投资企业和发行前股东结构识别"
+  }
+}

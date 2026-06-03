@@ -1,0 +1,67 @@
+{
+  "company": {
+    "company_name": "中科星图测控技术股份有限公司",
+    "stock_code": "920116",
+    "exchange": "BSE",
+    "board": "北交所",
+    "listing_date": "2024-12-27",
+    "prospectus_title": "中科星图测控技术股份有限公司招股说明书",
+    "prospectus_url": "https://www.bse.cn/disclosure/2024/2024-12-20/1734690128_320590.pdf",
+    "prospectus_version": "正式稿",
+    "prospectus_date": "2024-12-20"
+  },
+  "financing_events": [
+    {
+      "event_type": "股权转让",
+      "date": "2017年10月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "9 日分别签署了《股权转让协议》，"
+    },
+    {
+      "event_type": "其他",
+      "date": "2016年12月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "四方股份、罗永红、王金林共同出资设立星图测控有限，其中，四"
+    },
+    {
+      "event_type": "增资",
+      "date": "2024年4月",
+      "amount": "300",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "24 日成立，公司认缴出资 300 万元，持股比例 30%，"
+    },
+    {
+      "event_type": "股权转让",
+      "date": "2023年5月",
+      "amount": "",
+      "investor": "",
+      "valuation_pre": "",
+      "valuation_post": "",
+      "share_percentage": "",
+      "lock_up_period": "",
+      "evidence_text": "公司完成定向发行，新增股份在全国中小企业股份转让系统挂牌转"
+    }
+  ],
+  "processing": {
+    "download_status": "success",
+    "parse_status": "success",
+    "locate_status": "success",
+    "extract_status": "success",
+    "review_status": "待复核",
+    "notes": "含新增股东增资金额与创业投资股东信息"
+  }
+}
