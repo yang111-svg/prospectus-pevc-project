@@ -8,14 +8,14 @@
 
 | sample_id | 公司 | 下载 | 解析 | 章节定位 | 候选文本 | JSON输出 | 人工复核 | 问题 |
 |-----------|------|------|------|----------|----------|----------|----------|------|
-| MB001 | 三联锻造 | success | success | success | success | success (13个事件) | 待复核 | |
-| MB002 | 友升股份 | success | success | success | success | success (11个事件) | 待复核 | |
-| GEM001 | 黄山谷捷 | success | success | success | success | success (9个事件) | 待复核 | |
-| GEM002 | 云汉芯城 | success | success | success | success | success (11个事件) | 待复核 | |
-| STAR001 | 赛分科技 | success | success | success | success | success (14个事件) | 待复核 | |
-| STAR002 | 影石创新 | success | success | success | success | success (9个事件) | 待复核 | |
-| BSE001 | 三协电机 | success | success | success | success | success (14个事件) | 待复核 | |
-| BSE002 | 星图测控 | success | success | success | success | success (4个事件) | 待复核 | |
+| MB001 | 三联锻造 | success | success | success | success | success (13个事件) | unchecked | |
+| MB002 | 友升股份 | success | success | success | success | success (11个事件) | unchecked | |
+| GEM001 | 黄山谷捷 | success | success | success | success | success (9个事件) | unchecked | |
+| GEM002 | 云汉芯城 | success | success | success | success | success (11个事件) | unchecked | |
+| STAR001 | 赛分科技 | success | success | success | success | success (14个事件) | unchecked | |
+| STAR002 | 影石创新 | success | success | success | success | success (9个事件) | unchecked | |
+| BSE001 | 三协电机 | success | success | success | success | success (14个事件) | unchecked | |
+| BSE002 | 星图测控 | success | success | success | success | success (4个事件) | unchecked | |
 
 ## 3. 招股说明书来源
 
@@ -31,6 +31,10 @@
 - 确认文件标题包含 "招股说明书"
 - 排除 "上市公告书"、"发行公告"、"问询回复" 等非目标文件
 - 优先选择正式稿或注册稿
+
+### 网站收集方法文档
+- 文件路径: `source_notes/website_collection_method.md`
+- 内容: 详细记录了巨潮资讯、北交所等网站的检索方法、文件筛选规则、链接失效处理方式
 
 ## 4. 代码说明
 
@@ -168,10 +172,35 @@ python validate.py
 
 ### JSON字段规则
 - 公司信息: company_name, stock_code, exchange, board, listing_date, prospectus_title, prospectus_url, prospectus_version, prospectus_date
-- 融资事件: event_type, date, amount, investor, valuation_pre, valuation_post, share_percentage, lock_up_period, evidence_text
+- 融资事件（完整结构）:
+  - event_order: 事件序号
+  - event_date: 事件日期
+  - date_type: 协议签署日/工商变更日/股东会决议日/未说明
+  - event_type: 增资/股权转让/增资及股权转让/其他
+  - disclosed_round: 披露轮次（未披露时填"未披露"）
+  - inferred_round: 推断轮次（AI推断时填写）
+  - round_inference_basis: 推断依据
+  - total_investment_amount: 投资总额（万元）
+  - currency: 币种（CNY）
+  - share_price: 每股价格
+  - pre_money_valuation: 投前估值
+  - post_money_valuation: 投后估值
+  - valuation_basis: 估值依据
+  - investors: 投资方数组（含investor_original_name, investor_short_name, investor_type, is_pevc, investment_amount, shares_acquired, shareholding_ratio_after_event, exit_status_before_ipo）
+  - source_section: 来源章节
+  - source_page: 来源页码
+  - evidence_text: 证据文本（必须保留原文）
+  - confidence: 置信度（high/medium/low）
 - 处理状态: download_status, parse_status, locate_status, extract_status, review_status, notes
 
-## 8. 下周计划
+## 8. 团队成员分工
+
+| 成员 | 负责公司 | 主要工作 |
+|------|----------|----------|
+| 杨苗鑫 | 三联锻造、黄山谷捷、赛分科技、三协电机 | PDF下载、解析、候选文本截取、JSON抽取 |
+| 赵秉清 | 友升股份、云汉芯城、影石创新、星图测控 | PDF下载、解析、候选文本截取、JSON抽取 |
+
+## 9. 下周计划
 
 - 进行人工复核，验证抽取结果的准确性
 - 补充完善投资方名称、融资金额等字段
