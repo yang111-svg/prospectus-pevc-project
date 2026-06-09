@@ -304,7 +304,7 @@ def cross_check_company(
         return results
 
     # --- t0 存在性 ---
-    has_t0 = any(s.get("snapshot_label", "") == "t0" for s in snapshots)
+    has_t0 = any(s.get("snapshot_label", "").startswith("t0") for s in snapshots)
     if not has_t0:
         results.append({
             "company_name": company_name,
@@ -335,7 +335,7 @@ def cross_check_company(
 
         # 如果日期不可用，则按 snapshot_label 顺序取中间所有 subscription
         # 这里采用更宽松的策略: 取所有 subscription，因为日期可能不精确
-        middle_subs = subscriptions  # 简化: 使用全部 subscription
+        middle_subs = [sub for sub in subscriptions if sub.get("event_type", "").startswith("增资")]
 
         # 如果有日期信息，可以更精确过滤
         if prev_date_key and next_date_key:
