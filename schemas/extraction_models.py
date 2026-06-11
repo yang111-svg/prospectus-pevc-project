@@ -36,11 +36,11 @@ class SubscriptionFlow(BaseModel):
     subscription_date: Optional[str] = Field(None, description="认缴日期 (YYYY-MM-DD 或 YYYY-MM 或 YYYY)")
     investor_name: str = Field(..., description="投资者名称")
     investor_type: Optional[str] = Field(None, description="投资者类型 (PE/VC/天使/产业资本/政府引导基金/个人/其他)")
+    event_type: Optional[str] = Field(None, description="事件类型 (增资/股权转让/出资认购/其他)")
     subscription_qty_wan: Optional[float] = Field(None, description="认缴股数 (万股)")
     subscription_amount_wan: Optional[float] = Field(None, description="认缴金额 (万元)")
     subscription_price: Optional[float] = Field(None, description="每股认购价格 (元/股)")
     currency: Optional[str] = Field(None, description="货币 (CNY/USD/其他)")
-    event_type: Optional[str] = Field(None, description="事件类型 (增资/股权转让/出资认购/其他)")
     evidence_text: Optional[str] = Field(None, description="招股书原文证据片段")
     extraction_notes: Optional[str] = Field(None, description="提取备注")
 
@@ -53,9 +53,13 @@ class SubscriptionFlow(BaseModel):
 
     @field_validator("subscription_qty_wan", "subscription_amount_wan", "subscription_price", mode="before")
     @classmethod
-    def validate_non_negative(cls, v):
+    def validate_non_negative(cls, v, info):
+        # 允许股权转让场景下的负数（出让方）
+        event_type = info.data.get("event_type", "")
+        if event_type and ("转让" in event_type or "减资" in event_type):
+            return v
         if v is not None and isinstance(v, (int, float)) and v < 0:
-            raise ValueError("数值不能为负数")
+            raise ValueError("数值不能为负数（非股权转让/减资场景）")
         return v
 
 

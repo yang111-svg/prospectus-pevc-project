@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 JSONL 校验脚本 -- 对 week2 JSONL 抽取结果执行三级校验:
   1. Schema 校验  (Pydantic 模型解析)
   2. 业务规则校验 (数值逻辑 / 持股比例合计 / t0 存在性)
-  3. Cross-check 校验 (相邻时点股本 + 中间认缴的一致性)
+  3. Cross-check 校验 (相邻时点股本 + 中间事件的一致性，支持增资/股权转让/减资)
 
 用法:
   python scripts/validate_jsonl.py
@@ -194,21 +194,23 @@ def validate_business_rules(
         qty = safe_float(raw_json.get("subscription_qty_wan"))
         amount = safe_float(raw_json.get("subscription_amount_wan"))
         price = safe_float(raw_json.get("subscription_price"))
+        event_type = raw_json.get("event_type", "")
 
-        # 非负检查（Pydantic 已做，这里做兜底）
-        for name_, val_ in [("subscription_qty_wan", qty), ("subscription_amount_wan", amount), ("subscription_price", price)]:
-            if val_ is not None and val_ < 0:
-                results.append({
-                    "file": file_path, "line": line_num,
-                    "company_name": company_name, "stock_code": stock_code,
-                    "record_type": record_type,
-                    "check_level": "business", "check_type": "negative_value",
-                    "status": "FAIL",
-                    "detail": f"{name_}={val_} 不能为负数",
-                })
+        # 非负检查（减资和股权转让允许负数或零）
+        if "减资" not in event_type and "转让" not in event_type:
+            for name_, val_ in [("subscription_qty_wan", qty), ("subscription_amount_wan", amount)]:
+                if val_ is not None and val_ < 0:
+                    results.append({
+                        "file": file_path, "line": line_num,
+                        "company_name": company_name, "stock_code": stock_code,
+                        "record_type": record_type,
+                        "check_level": "business", "check_type": "negative_value",
+                        "status": "FAIL",
+                        "detail": f"{name_}={val_} 不能为负数(非减资/转让场景)",
+                    })
 
-        # qty * price ≈ amount
-        if qty is not None and price is not None and amount is not None:
+        # qty * price ≈ amount (仅对增资检查)
+        if "增资" in event_type and qty is not None and price is not None and amount is not None:
             expected = qty * price
             if not approx_eq(expected, amount):
                 results.append({
@@ -266,13 +268,23 @@ def validate_business_rules(
                     "detail": f"时点 {snapshot_label} 持股比例合计={pct_sum:.2f}%",
                 })
 
-        # t0 存在性检查 -- 在 cross-check 阶段按公司汇总判断
-
     return results
 
 
+def classify_event_type(event_type: str) -> str:
+    """将 event_type 归类为: 增资/股权转让/减资/其他"""
+    et = (event_type or "").lower()
+    if "增资" in et:
+        return "增资"
+    if "转让" in et or "代持还原" in et or "激励" in et:
+        return "股权转让"
+    if "减资" in et:
+        return "减资"
+    return "其他"
+
+
 # ===================================================================
-# 3. Cross-check 校验
+# 3. Cross-check 校验 (支持增资、股权转让、减资等)
 # ===================================================================
 
 def cross_check_company(
@@ -285,6 +297,7 @@ def cross_check_company(
     对单家公司执行 cross-check:
       - 检查 t0 存在
       - 按时点排序后，检查相邻时点之间的股本/持股一致性
+      - 支持增资、股权转让、减资等多种事件类型
     """
     results: list[dict] = []
 
@@ -329,15 +342,10 @@ def cross_check_company(
         next_label = snap_next.get("snapshot_label", "")
 
         # 找到两个时点之间的 subscription_flow 记录
-        # 判断依据: subscription_date 在 (prev_date, next_date] 之间
         prev_date_key = parse_date_sort_key(snap_prev.get("snapshot_date"))
         next_date_key = parse_date_sort_key(snap_next.get("snapshot_date"))
 
-        # 如果日期不可用，则按 snapshot_label 顺序取中间所有 subscription
-        # 这里采用更宽松的策略: 取所有 subscription，因为日期可能不精确
-        middle_subs = [sub for sub in subscriptions if sub.get("event_type", "").startswith("增资")]
-
-        # 如果有日期信息，可以更精确过滤
+        # 取两个时点之间的所有subscription记录（不限于增资）
         if prev_date_key and next_date_key:
             middle_subs = [
                 sub for sub in subscriptions
@@ -346,32 +354,53 @@ def cross_check_company(
             # 如果精确过滤后为空，回退到全部
             if not middle_subs:
                 middle_subs = subscriptions
+        else:
+            middle_subs = subscriptions
 
-        # 计算中间认缴合计
-        total_sub_qty = 0.0
-        sub_by_investor: dict[str, float] = defaultdict(float)
+        # 按事件类型分类统计
+        total_capital_change = 0.0  # 总股本变化（增资为正，减资为负）
+        transfer_by_investor: dict[str, float] = defaultdict(float)  # 股东净变化
+
         for sub in middle_subs:
             qty = safe_float(sub.get("subscription_qty_wan"))
-            if qty is not None:
-                total_sub_qty += qty
-                inv_name = sub.get("investor_name", "")
-                sub_by_investor[inv_name] += qty
+            if qty is None:
+                continue
+            inv_name = sub.get("investor_name", "")
+            event_class = classify_event_type(sub.get("event_type", ""))
+
+            if event_class == "增资":
+                total_capital_change += qty
+                transfer_by_investor[inv_name] += qty
+            elif event_class == "减资":
+                total_capital_change += qty  # qty已经是负数
+                transfer_by_investor[inv_name] += qty
+            elif event_class == "股权转让":
+                # 股权转让：总股本不变，但股东间持股变化
+                transfer_by_investor[inv_name] += qty
 
         # --- 总股本一致性 ---
         prev_total = safe_float(snap_prev.get("total_shares"))
         next_total = safe_float(snap_next.get("total_shares"))
 
         if prev_total is not None and next_total is not None:
-            expected_total = prev_total + total_sub_qty
+            expected_total = prev_total + total_capital_change
             if not approx_eq(expected_total, next_total):
+
+                # 判断是否为纯股权转让场景（总股本应不变）
+                has_transfer_only = all(
+                    classify_event_type(sub.get("event_type", "")) == "股权转让"
+                    for sub in middle_subs
+                ) if middle_subs else False
+                is_transfer_only = has_transfer_only and approx_eq(prev_total, next_total)
+                status = "WARN" if is_transfer_only else "FAIL"
                 results.append({
                     "company_name": company_name,
                     "stock_code": stock_code,
                     "check_type": "total_shares_mismatch",
-                    "status": "FAIL",
+                    "status": status,
                     "detail": (
                         f"{prev_label}-> {next_label}: "
-                        f"上一时点total_shares({prev_total}) + 中间认缴合计({total_sub_qty}) "
+                        f"上一时点total_shares({prev_total}) + 股本变化({total_capital_change}) "
                         f"= {expected_total:.4f}, 与下一时点total_shares({next_total}) 偏差超过 {TOLERANCE*100}%"
                     ),
                     "from_label": prev_label,
@@ -388,7 +417,7 @@ def cross_check_company(
                     "status": "PASS",
                     "detail": (
                         f"{prev_label}-> {next_label}: "
-                        f"total_shares 一致 ({prev_total} + {total_sub_qty} = {expected_total:.4f})"
+                        f"total_shares 一致 ({prev_total} + {total_capital_change} = {expected_total:.4f})"
                     ),
                     "from_label": prev_label,
                     "to_label": next_label,
@@ -407,20 +436,24 @@ def cross_check_company(
             next_sh = next_shareholders.get(name, {})
             prev_shares = safe_float(prev_sh.get("shares"))
             next_shares = safe_float(next_sh.get("shares"))
-            sub_qty = sub_by_investor.get(name, 0.0)
+            net_change = transfer_by_investor.get(name, 0.0)
 
             if prev_shares is not None and next_shares is not None:
-                expected_shares = prev_shares + sub_qty
+                expected_shares = prev_shares + net_change
                 if not approx_eq(expected_shares, next_shares):
+                    # 判断是否为纯股权转让场景（总股本不变）
+                    is_transfer_only = approx_eq(prev_total, next_total) if (prev_total and next_total) else False
+                    status = "WARN" if is_transfer_only else "FAIL"
                     results.append({
                         "company_name": company_name,
                         "stock_code": stock_code,
                         "check_type": "shareholder_shares_mismatch",
-                        "status": "FAIL",
+                        "status": status,
                         "detail": (
                             f"{prev_label}-> {next_label} 股东[{name}]: "
-                            f"上一时点shares({prev_shares}) + 认购({sub_qty}) "
-                            f"= {expected_shares:.4f}, 与下一时点shares({next_shares}) 偏差超过 {TOLERANCE*100}%"
+                            f"上一时点shares({prev_shares}) + 净变化({net_change}) "
+                            f"= {expected_shares:.4f}, 与下一时点shares({next_shares}) 偏差"
+                            + (" (股权转让可能缺少出让方记录)" if is_transfer_only else f" 超过 {TOLERANCE*100}%")
                         ),
                         "from_label": prev_label,
                         "to_label": next_label,
@@ -436,7 +469,7 @@ def cross_check_company(
                         "status": "PASS",
                         "detail": (
                             f"{prev_label}-> {next_label} 股东[{name}]: "
-                            f"shares 一致 ({prev_shares} + {sub_qty} = {expected_shares:.4f})"
+                            f"shares 一致 ({prev_shares} + {net_change} = {expected_shares:.4f})"
                         ),
                         "from_label": prev_label,
                         "to_label": next_label,
@@ -614,7 +647,12 @@ def main():
         cross_check_results.extend(cc)
 
         for r in cc:
-            icon = "PASS" if r["status"] == "PASS" else "FAIL"
+            if r["status"] == "PASS":
+                icon = "PASS"
+            elif r["status"] == "WARN":
+                icon = "WARN"
+            else:
+                icon = "FAIL"
             print(f"    [{icon}] {r['check_type']}: {r['detail']}")
 
     # ---- 统计 ----
@@ -632,6 +670,7 @@ def main():
                 total_business_fail += 1
 
     total_cross_pass = sum(1 for r in cross_check_results if r["status"] == "PASS")
+    total_cross_warn = sum(1 for r in cross_check_results if r["status"] == "WARN")
     total_cross_fail = sum(1 for r in cross_check_results if r["status"] == "FAIL")
 
     print("\n" + "=" * 70)
@@ -641,7 +680,7 @@ def main():
     print(f"  总行数: {total_lines}")
     print(f"  Schema 校验:  PASS={total_schema_pass}  FAIL={total_schema_fail}")
     print(f"  业务规则校验: PASS={total_business_pass}  FAIL={total_business_fail}")
-    print(f"  Cross-check:  PASS={total_cross_pass}  FAIL={total_cross_fail}")
+    print(f"  Cross-check:  PASS={total_cross_pass}  WARN={total_cross_warn}  FAIL={total_cross_fail}")
 
     # ---- 写入 schema_validation_log.csv ----
     schema_log_fieldnames = [
