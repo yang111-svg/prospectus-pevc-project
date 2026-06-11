@@ -17,12 +17,13 @@ C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,2,黄山谷捷股份有限公司,301581,subscription_flow,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,3,黄山谷捷股份有限公司,301581,subscription_flow,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,4,黄山谷捷股份有限公司,301581,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,5,黄山谷捷股份有限公司,301581,equity_snapshot,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,6,黄山谷捷股份有限公司,301581,subscription_flow,schema,pydantic_parse,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,5,黄山谷捷股份有限公司,301581,subscription_flow,schema,pydantic_parse,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,6,黄山谷捷股份有限公司,301581,equity_snapshot,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,7,黄山谷捷股份有限公司,301581,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,8,黄山谷捷股份有限公司,301581,equity_snapshot,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,9,黄山谷捷股份有限公司,301581,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,10,黄山谷捷股份有限公司,301581,equity_snapshot,schema,pydantic_parse,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,8,黄山谷捷股份有限公司,301581,subscription_flow,schema,pydantic_parse,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,9,黄山谷捷股份有限公司,301581,equity_snapshot,schema,pydantic_parse,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,10,黄山谷捷股份有限公司,301581,subscription_flow,schema,pydantic_parse,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,11,黄山谷捷股份有限公司,301581,equity_snapshot,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\603418_上海友升铝业.jsonl,1,上海友升铝业股份有限公司,603418,equity_snapshot,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\603418_上海友升铝业.jsonl,2,上海友升铝业股份有限公司,603418,subscription_flow,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\603418_上海友升铝业.jsonl,3,上海友升铝业股份有限公司,603418,equity_snapshot,schema,pydantic_parse,PASS,
@@ -46,7 +47,7 @@ C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,3,苏州赛分科技股份有限公司,688758,subscription_flow,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,4,苏州赛分科技股份有限公司,688758,subscription_flow,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,5,苏州赛分科技股份有限公司,688758,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,6,苏州赛分科技股份有限公司,688758,equity_snapshot,schema,pydantic_parse,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,6,苏州赛分科技股份有限公司,688758,subscription_flow,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,7,苏州赛分科技股份有限公司,688758,equity_snapshot,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688775_影石创新.jsonl,1,影石创新科技股份有限公司,688775,equity_snapshot,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688775_影石创新.jsonl,2,影石创新科技股份有限公司,688775,subscription_flow,schema,pydantic_parse,PASS,
@@ -94,26 +95,6 @@ C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,7,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,8,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,9,常州三协电机股份有限公司,920100,equity_snapshot,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,10,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,11,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,12,常州三协电机股份有限公司,920100,equity_snapshot,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,13,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,14,常州三协电机股份有限公司,920100,equity_snapshot,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,15,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,16,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,17,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,18,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,19,常州三协电机股份有限公司,920100,equity_snapshot,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,20,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,21,常州三协电机股份有限公司,920100,equity_snapshot,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,22,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,23,常州三协电机股份有限公司,920100,equity_snapshot,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,24,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,25,常州三协电机股份有限公司,920100,equity_snapshot,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,26,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,27,常州三协电机股份有限公司,920100,equity_snapshot,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,28,常州三协电机股份有限公司,920100,subscription_flow,schema,pydantic_parse,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,29,常州三协电机股份有限公司,920100,equity_snapshot,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920116_中科星图测控.jsonl,1,中科星图测控技术股份有限公司,920116,equity_snapshot,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920116_中科星图测控.jsonl,2,中科星图测控技术股份有限公司,920116,subscription_flow,schema,pydantic_parse,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920116_中科星图测控.jsonl,3,中科星图测控技术股份有限公司,920116,subscription_flow,schema,pydantic_parse,PASS,
@@ -140,12 +121,13 @@ C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301563_云汉芯
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301563_云汉芯城.jsonl,9,云汉芯城（上海）互联网科技股份有限公司,301563,subscription_flow,business,amount_consistency,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301563_云汉芯城.jsonl,10,云汉芯城（上海）互联网科技股份有限公司,301563,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t1|第一次增资后 持股比例合计=96.29%
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,1,黄山谷捷股份有限公司,301581,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t0|有限公司设立 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,5,黄山谷捷股份有限公司,301581,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t1|第一次股权转让后 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,6,黄山谷捷股份有限公司,301581,subscription_flow,business,amount_consistency,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,5,黄山谷捷股份有限公司,301581,subscription_flow,business,amount_consistency,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,6,黄山谷捷股份有限公司,301581,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t1|第一次股权转让后 持股比例合计=100.00%
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,7,黄山谷捷股份有限公司,301581,subscription_flow,business,amount_consistency,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,8,黄山谷捷股份有限公司,301581,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t2|第一次增资后 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,9,黄山谷捷股份有限公司,301581,subscription_flow,business,amount_consistency,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,10,黄山谷捷股份有限公司,301581,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t3|第二次增资后 持股比例合计=100.00%
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,8,黄山谷捷股份有限公司,301581,subscription_flow,business,amount_consistency,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,9,黄山谷捷股份有限公司,301581,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t2|第一次增资后 持股比例合计=100.00%
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,10,黄山谷捷股份有限公司,301581,subscription_flow,business,amount_consistency,PASS,
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\301581_黄山谷捷.jsonl,11,黄山谷捷股份有限公司,301581,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t3|第二次增资后 持股比例合计=100.00%
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\603418_上海友升铝业.jsonl,1,上海友升铝业股份有限公司,603418,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t0｜报告期初 持股比例合计=100.00%
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\603418_上海友升铝业.jsonl,3,上海友升铝业股份有限公司,603418,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t0+｜整体变更后 持股比例合计=100.00%
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\603418_上海友升铝业.jsonl,4,上海友升铝业股份有限公司,603418,subscription_flow,business,amount_consistency,PASS,
@@ -167,7 +149,7 @@ C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,3,苏州赛分科技股份有限公司,688758,subscription_flow,business,amount_consistency,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,4,苏州赛分科技股份有限公司,688758,subscription_flow,business,amount_consistency,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,5,苏州赛分科技股份有限公司,688758,subscription_flow,business,amount_consistency,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,6,苏州赛分科技股份有限公司,688758,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t1|第一次增资后 持股比例合计=100.00%
+C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,6,苏州赛分科技股份有限公司,688758,subscription_flow,business,amount_consistency,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688758_苏州赛分科技.jsonl,7,苏州赛分科技股份有限公司,688758,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t1|第一次增资后 持股比例合计=100.00%
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688775_影石创新.jsonl,1,影石创新科技股份有限公司,688775,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t0|报告期初 持股比例合计=100.00%
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\688775_影石创新.jsonl,2,影石创新科技股份有限公司,688775,subscription_flow,business,amount_consistency,PASS,
@@ -215,19 +197,6 @@ C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,7,常州三协电机股份有限公司,920100,subscription_flow,business,amount_consistency,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,8,常州三协电机股份有限公司,920100,subscription_flow,business,amount_consistency,PASS,
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,9,常州三协电机股份有限公司,920100,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t2|第二次增资后 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,12,常州三协电机股份有限公司,920100,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t3|第一次股权转让后 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,14,常州三协电机股份有限公司,920100,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t4|第二次股权转让后 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,15,常州三协电机股份有限公司,920100,subscription_flow,business,amount_consistency,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,16,常州三协电机股份有限公司,920100,subscription_flow,business,amount_consistency,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,17,常州三协电机股份有限公司,920100,subscription_flow,business,amount_consistency,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,18,常州三协电机股份有限公司,920100,subscription_flow,business,amount_consistency,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,19,常州三协电机股份有限公司,920100,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t5|第三次增资后 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,21,常州三协电机股份有限公司,920100,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t6|第三次股权转让后 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,23,常州三协电机股份有限公司,920100,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t7|第四次股权转让后 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,24,常州三协电机股份有限公司,920100,subscription_flow,business,amount_consistency,PASS,
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,25,常州三协电机股份有限公司,920100,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t8|第四次增资后 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,27,常州三协电机股份有限公司,920100,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t9|第五次股权转让后 持股比例合计=100.00%
-C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920100_常州三协电机.jsonl,29,常州三协电机股份有限公司,920100,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t10|减资后 持股比例合计=100.00%
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920116_中科星图测控.jsonl,1,中科星图测控技术股份有限公司,920116,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t0｜报告期初 持股比例合计=100.00%
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920116_中科星图测控.jsonl,4,中科星图测控技术股份有限公司,920116,equity_snapshot,business,shareholding_pct_sum,PASS,时点 t1|代持还原后 持股比例合计=100.00%
 C:\Users\HP\Desktop\prospectus-pevc-project\outputs\week2_jsonl\920116_中科星图测控.jsonl,5,中科星图测控技术股份有限公司,920116,subscription_flow,business,amount_consistency,PASS,
